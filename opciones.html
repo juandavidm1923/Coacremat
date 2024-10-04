@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Opciones COACREMAT</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">COACREMAT</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Servicios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contáctanos</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mt-5">
+        <h2 class="text-center">Actualización de Datos</h2>
+        <div class="card mx-auto" style="width: 400px;">
+            <div class="card-body">
+                <h5 class="card-title">Actualiza tus datos personales</h5>
+                <form id="updateForm">
+                    <div class="mb-3">
+                        <label for="nombre" class="form-label">Nombre</label>
+                        <input type="text" class="form-control" id="nombre" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="correo" class="form-label">Correo Electrónico</label>
+                        <input type="email" class="form-control" id="correo" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="telefono" class="form-label">Teléfono</label>
+                        <input type="text" class="form-control" id="telefono" required>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Actualizar Datos</button>
+                </form>
+                <div class="alert alert-success mt-3" id="updateSuccessMessage" style="display: none;">
+                    ¡Datos actualizados correctamente!
+                </div>
+            </div>
+        </div>
+
+        <h2 class="text-center mt-5">Premios por Fidelización</h2>
+        <div class="row">
+            <!-- Tarjeta Premio 1 -->
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="https://via.placeholder.com/300" class="card-img-top" alt="Electrodoméstico">
+                    <div class="card-body">
+                        <h5 class="card-title">Electrodoméstico</h5>
+                        <p class="card-text">Redime tus puntos por un práctico electrodoméstico para tu hogar.</p>
+                        <button class="btn btn-success dropdown-btn">Redimir por 500 puntos</button>
+                        <div class="dropdown-content">
+                            <p>¿Estás seguro que deseas redimir este electrodoméstico por 500 puntos?</p>
+                            <button class="btn btn-success">Confirmar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Tarjeta Premio 2 -->
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="https://via.placeholder.com/300" class="card-img-top" alt="Bono de Descuento">
+                    <div class="card-body">
+                        <h5 class="card-title">Bono de Descuento</h5>
+                        <p class="card-text">Obtén un bono de descuento para tus próximas compras.</p>
+                        <button class="btn btn-success dropdown-btn">Redimir por 300 puntos</button>
+                        <div class="dropdown-content">
+                            <p>¿Estás seguro que deseas redimir este bono por 300 puntos?</p>
+                            <button class="btn btn-success">Confirmar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Tarjeta Premio 3 -->
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="https://via.placeholder.com/300" class="card-img-top" alt="Viaje">
+                    <div class="card-body">
+                        <h5 class="card-title">Viaje</h5>
+                        <p class="card-text">Acumula puntos y disfruta de un increíble viaje a un destino turístico.</p>
+                        <button class="btn btn-success dropdown-btn">Redimir por 1000 puntos</button>
+                        <div class="dropdown-content">
+                            <p>¿Estás seguro que deseas redimir este viaje por 1000 puntos?</p>
+                            <button class="btn btn-success">Confirmar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
